@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sonia AI Receptionist</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Sonia AI Receptionist</h1>
+        <p>Deepika Computer & Printer Center · DCPC-0001</p>
+      </div>
+      <span id="status">Ready</span>
+    </header>
+
+    <main>
+      <section id="chat" class="chat" aria-live="polite"></section>
+      <div class="quick-actions">
+        <button data-msg="बाल आधार सेवा की जानकारी">बाल आधार</button>
+        <button data-msg="पैन कार्ड सेवा की जानकारी">PAN Card</button>
+        <button data-msg="दिल्ली ई-डिस्ट्रिक्ट सेवा की जानकारी">e-District</button>
+        <button data-msg="प्रिंटिंग और स्कैनिंग सेवा की जानकारी">Print & Scan</button>
+      </div>
+      <div class="composer">
+        <button id="micBtn" class="mic" title="Voice input">🎤</button>
+        <input id="message" placeholder="अपना प्रश्न लिखें / Type your question" autocomplete="off" />
+        <button id="sendBtn">Send</button>
+      </div>
+      <div class="settings">
+        <label><input id="voiceReply" type="checkbox" checked /> Voice reply</label>
+        <select id="language">
+          <option value="auto">Auto language</option>
+          <option value="hi-IN">Hindi</option>
+          <option value="en-IN">English</option>
+        </select>
+      </div>
+    </main>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
